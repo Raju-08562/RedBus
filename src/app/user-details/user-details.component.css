@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+.row{
+    margin: 5px;
+}
+.col{
+    padding: 5px;
+}
+.card{
+    justify-content: center;
+}

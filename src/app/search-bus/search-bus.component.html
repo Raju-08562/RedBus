@@ -1,0 +1,51 @@
+<section class="bg">
+    <div class="container">
+        <div class="card">
+            <div class="form">
+           
+        <!-- <form [formGroup]='searchForm' (ngSubmit)='search()'>  
+            <div class="form-row row">
+                   
+                <div class="form-group col  col-3"><input type="text" placeholder="Source" class="form-control " formControlName="source"></div>
+                <div class="form-group col  col-3"><input type="text" placeholder="Destination" class="form-control" formControlName="destination"></div>
+                <div class="form-group col  col-3"><input type="date" placeholder="Onward date" class="form-control" formControlName="journerDate"></div>
+                <div class="col  col-3"><button class="btn btn-danger" type="submit">Search Bus</button>   </div>  
+            </div>                
+        </form> -->
+        <form [formGroup]="searchForm" (ngSubmit)="search()">             
+            <div class="form-row row" style="padding:10px">  
+                    <div class="col-6">  
+                       <label>Leaving From</label>
+                    </div>                              
+                    <div class="col-6">  
+                        <label>Leaving From</label>
+                    </div>          
+                <div class="form-group col-6">  
+                        <input type="text" placeholder="Source" class="form-control" formControlName="source">
+                </div>                              
+                <div class="form-group col-6">                     
+                    <input type="text"  placeholder="Destination" class="form-control" formControlName="destination">                       
+                    
+                </div>             
+
+                <div class="form-row">
+                    <div class="col-12">  
+                        <label>Journey Date</label>
+                    </div> 
+                    <div class="form-group col-12"> 
+                        <input type="date" placeholder="Onward date" class="form-control" formControlName="journerDate">
+                    </div>
+
+                </div>        
+            </div>
+            <div class="text-center"style="padding:10px"> 
+                <button class="btn btn-danger" type="submit">Search</button>
+            </div>
+        </form>
+    </div> 
+        </div>
+        <div class="card">
+            <img src="assets/images/Redbus.jpg" alt="Navbar images" width="100%" height="100%" >
+        </div>
+    </div>
+</section>

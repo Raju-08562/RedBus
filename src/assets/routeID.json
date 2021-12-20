@@ -1,0 +1,11 @@
+[
+    {"id":1 ,"source":"Hyderabad","destination":"Vijayawada"},
+    {"id":2 ,"source":"Hyderabad","destination":"Mumbai"},
+    {"id":3 ,"source":"Hyderabad","destination":"Bengalore"},
+    {"id":4 ,"source":"Mumbai","destination":"Vijayawada"},
+    {"id":6 ,"source":"Mumbai","destination":"Bengalore"},
+    {"id":7 ,"source":"Mumbai","destination":"Hyderabad"},
+    {"id":8 ,"source":"Bengalore","destination":"Vijayawada"},
+    {"id":9 ,"source":"Bengalore","destination":"Hyderabad"},
+    {"id":10 ,"source":"Bengalore","destination":"Bengalore"}
+]

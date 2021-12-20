@@ -1,0 +1,41 @@
+<p>user-details works!</p>
+<div class="container">
+    <div class="card col-6">
+        <div class="card-header">
+            User Details
+        </div>
+        <div class="card-body">
+            <form [formGroup]='userDetailsForm' (ngSubmit)="onFormSubmit()">
+                <div class="form-row row">                
+                    <div class="form-group col">
+                      <label>User Name :</label>
+                      <input type="text" class="form-control" formControlName="userName" />
+                      <div class="text-danger" *ngIf="submitted && checkRequiredError('userName')">First Name is required</div>
+                    </div>
+                  </div>
+                  <div class="form-row row">
+                    <div class="form-group col">
+                      <label>User Mobile No:</label>
+                      <input type="text" class="form-control" formControlName="userMobileNo" />
+                      <div class="text-danger" *ngIf="submitted && checkRequiredError('userMobileNo')">Last Name is required</div>
+                    </div>
+                  </div> 
+                   <div class="form-row row">
+                    <div class="form-group col">
+                        <label>User Email :</label>
+                        <input type="email" class="form-control" formControlName="userEmail" />
+                        <div class="text-danger" *ngIf=" submitted && checkRequiredError('userEmail')">Email is required</div>
+                    </div>
+                   </div>
+                   <br>
+
+                   <div class="cnfbtn">
+                    <button class="btn  btn-sm btn-primary" type="submit" >Confirm</button>               
+                  </div>
+                  <!-- [disabled]='!userDetailsForm.valid' -->
+    
+    
+            </form>
+        </div>
+    </div>
+</div>

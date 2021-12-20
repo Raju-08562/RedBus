@@ -1,0 +1,23 @@
+.table{
+    /* display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 200vh; */
+    border: 1px solid rgb(209, 105, 105);
+  /* display: inline-block; */
+
+}
+thead{
+    background-color: rgb(223, 217, 217);
+}
+.card{
+    background-color: white;
+    margin-bottom: 10px;
+}
+.container{
+    border-inline: black;
+    width: 50%;
+}
+.vertical{
+    display: block;
+}

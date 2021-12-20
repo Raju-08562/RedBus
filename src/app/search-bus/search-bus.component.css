@@ -1,0 +1,32 @@
+section{
+    background-image : url("/assets/images/HomePageScreen.png");
+    width: 100%;
+    height: 80vh;
+    margin-left: auto;
+    margin-right: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+} 
+.col{
+    padding: 0px;
+}
+.card{
+    width: 30%;
+    background-color: rgb(241, 246, 247);
+    margin: 10px;
+}
+.form{
+display: flex;
+justify-content: center;
+align-content: center;
+}
+.form-row{
+    margin-top: 10px;
+    margin-bottom: 2px;
+}

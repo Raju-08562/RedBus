@@ -1,0 +1,80 @@
+<p>confirmation-page works!</p>
+<div class="container">
+    <div class="details">
+    <div class="card">
+        <div class="card-header" style="text-align: center; text-shadow: red; font-weight: 600;">
+            Online Reservation
+        </div>
+    </div>
+    <table class="table">
+        
+        <thead>
+            <tr>
+                <td>Source -> Destination</td>
+                <td>Date Time</td>
+                <td>Redbus.com</td>
+            </tr>
+        </thead>
+
+    </table>
+    <table class="table">
+        <thead>
+            <tr>
+                <td>Passenger Details</td>
+                <td>Ticket id</td>
+                <td>Seat No</td>
+                <td>Total Fare</td>
+            </tr>        
+        </thead>
+        <tbody>
+            <tr >
+                <td>
+                    <table>
+                        <tr *ngFor ="let user of userArray ">
+                            <td class="vertical">Name  : {{user.name}}</td> 
+                            <td class="vertical">Email : {{user.email}}</td> 
+                            <td class="vertical">Phone : {{user.moile}}</td>                       
+                        </tr>                    
+                    </table>
+                </td>
+                <td>123465987</td>
+                <td>
+                    <table>
+                        <tr *ngFor ="let seat of seatArray ">
+                            <td class="vertical">{{seat.seatNo}}</td>                                                  
+                        </tr>                    
+                    </table>
+
+                </td>
+                <td> {{total | currency }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table">
+        <thead>
+            <tr>
+                <td>Bus Name</td>
+                <td>Reporting Time</td>
+                <td>Departure Time</td>               
+            </tr>        
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <table>
+                    <tr>
+                        <td>Bus Name</td>                       
+                    </tr>
+                    <tr>
+                        <td>Coach Type: Non-Ac</td>                       
+                    </tr>                   
+                    </table>
+                </td>
+                <td>Before 30 Min</td>
+                <td>12:00 Pm</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>

@@ -1,0 +1,93 @@
+<div class="container">
+<!-- <table class="table table-bordered" style="border: red;">
+    <tr>
+        <td>hi</td>
+        <td>hello</td>
+    </tr>
+</table> -->
+<div class="bus">
+<div class="seats">
+    <div class="row">
+        <div class="col-1" >
+            <button class="">D</button>
+        </div>
+    </div>
+    <div class="row">
+            <div id="1" class="seat occupied"></div>
+            <div id="2" class="seat"></div>
+            <div id="3" class="seat"></div>
+            <div id="4" class="seat"></div>
+    </div> 
+    <div class="row"> 
+            <div id="5"  class="seat"></div>
+            <div id="6"  class="seat occupied"></div>
+            <div id="7"  class="seat"></div>
+            <div id="8"  class="seat"></div>
+    </div>
+    <div class="row"> 
+            <div id="9"   class="seat"></div>
+            <div id="10"  class="seat"></div>
+            <div id="11"  class="seat occupied"></div>
+            <div id="12"  class="seat"></div>
+    </div> 
+    <div class="row"> 
+            <div id="13"  class="seat"></div>
+            <div id="14"  class="seat"></div>
+            <div id="15"  class="seat"></div>
+            <div id="16"  class="seat"></div>
+    </div> 
+    <div class="row"> 
+            <div id="17"  class="seat occupied"></div>
+            <div id="18"  class="seat"></div>
+            <div id="19"  class="seat occupied"></div>
+            <div id="20"  class="seat"></div>
+    </div> 
+    <div class="row"> 
+            <div id="21"  class="seat"></div>
+            <div id="22"  class="seat"></div>
+            <div id="23"  class="seat"></div>
+            <div id="24"  class="seat"></div>
+    </div> 
+    <div class="row"> 
+            <div id="25"  class="seat"></div>
+            <div id="26"  class="seat"></div>
+            <div id="27"  class="seat"></div>
+            <div id="28"  class="seat"></div>
+    </div> 
+    <div class="row"> 
+            <div id="29"  class="seat"></div>
+            <div id="30"  class="seat"></div>
+            <div id="31"  class="seat"></div>
+            <div id="32"  class="seat"></div>
+    </div> 
+    <div class="row"> 
+            <div id="33"  class="seat"></div>
+            <div id="34"  class="seat"></div>
+            <div id="35"  class="seat"></div>
+            <div id="36"  class="seat"></div>
+    </div> 
+</div>
+</div>
+<div class="bookingDetails"> 
+    <table class="table" style="border: 1;">
+        <thead class="thead-dark">
+            <tr >
+            <th>Seat No</th>
+            <th>Fare</th>
+            <th>Class</th>
+        </tr>
+        </thead>
+        <tbody class="thead-light">
+            <tr *ngFor='let seat of selectedSeatsList' >
+                <td>{{seat.seatNo}}</td>
+                <td>{{seat.fare}}</td>
+                <td>{{seat.class}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="card">
+     Total : {{total}}
+    </div>
+    <button class="btn btn-sm btn-primary" (click)="onConfirm()"> Confirm </button>
+</div>
+</div>

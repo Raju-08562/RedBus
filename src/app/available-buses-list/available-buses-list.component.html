@@ -1,0 +1,53 @@
+
+<div class="main">
+<div class="card">
+    <div class="card-header">
+       <div class="row">
+           <div class="info col-12"  >
+               {{src}} -> {{dest}} on {{date1}} 
+           </div>           
+       </div>
+    <br>
+       <div class="row">
+           <div class="col-2">
+               Filter By 
+           </div>
+           <div class="col-5">
+               <input type="text" placeholder="Bus" [(ngModel)]='filterby1'>
+           </div>
+           <div class="col-5">
+            <input type="text" placeholder="Type (Non-Ac / Ac)" [(ngModel)]='filterby2'>
+        </div>
+       </div>
+    </div>
+    <div class="card-body">
+<div class="table-responsive">
+    <div class="table">
+       <thead>
+           <tr>
+                <th>Bus Name</th>
+                <th>Dept. Name</th>
+                <th>Coach Type</th>
+                <th>Seats Available</th>
+                <th>Fare</th>
+                <th> </th>
+           </tr>
+       </thead>    
+       <tbody>
+           <tr *ngFor='let bus of filteredBuses'>
+               <td> {{bus.busName}}</td>
+               <td>{{bus.dept.Time}}</td>
+               <td>{{bus.coachType}}</td>
+               <td>{{bus.availableSeats}}</td>
+               <td>{{bus.Fare}}</td>
+               <td><button class="btn btn-sm btn-danger" (click)='viewSeats(bus)'> View Seats </button></td>
+           </tr>
+       </tbody>       
+    </div>
+</div>
+    </div>
+    <div class="card-footer">
+<button (click)="test()"> test</button>
+    </div>
+</div>
+</div>
